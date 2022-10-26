@@ -30,7 +30,7 @@ public class AnimalShelterApplication {
 		
 		//Using an existing bean
 		Animal c = appContext.getBean("animal", Animal.class);
-		c.setRelationship("pet");
+		c.setAnimal("cat");
 		repo.save(c);
 		
 		//Create a bean to use - not managed by Spring
